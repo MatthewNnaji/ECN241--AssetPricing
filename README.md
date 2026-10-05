@@ -1,2 +1,2 @@
 # ECN241--AssetPricing
-Coding Projects done within ECN241 Year 2 finance module
+Coding Projects & Tutorials done within ECN241 Module
