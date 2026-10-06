@@ -72,7 +72,7 @@ def bondcalc(face,CR,TTM):
 	bPrice=0
 	for i in range(TTM):
 		r=spotrates[i]+creditspread
-		bPrice+=(coupon/((1+r)*(i+1)))
-	bPrice+=(face/((1+r)*TTM))
+		bPrice+=(coupon/((1+r)**(i+1))) 
+	bPrice+=(face/((1+r)**TTM))
 	return(bPrice)
 print(f"The bond price is ${bondcalc(1000,6,6):,.2f}.")
