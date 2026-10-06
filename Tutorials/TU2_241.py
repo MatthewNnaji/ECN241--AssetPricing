@@ -14,7 +14,7 @@ def bondpricer(par,TTM,YTM,CR):
     CR/=100
     coupon=par*CR
     pBond= (coupon/YTM)*(1-(1/(1+YTM)**TTM)) + par*(1/(1+YTM)**TTM)
-	return(pBond)
+    return(pBond)
 
 def bondchecker(realprice,par=1000):
     if realprice > par:
@@ -26,11 +26,11 @@ def bondchecker(realprice,par=1000):
 price = bondpricer(1000,3,4,5)    
 pricevalue = bondchecker(price)
 if pricevalue == 1:
-    print(f"The bond price is {price:,.2f} and hence trades above par.")
+    print(f"The bond price is £{price:,.2f} and hence trades above par.")
 if pricevalue == 2:
-    print("The bond trades at par and hence it's price is {price:,.2f}.")
+    print("The bond trades at par and hence its price is £{price:,.2f}.")
 if pricevalue == 3:
-    print("The bond price is {price:,.2f} and hence trades below par")
+    print("The bond price is £{price:,.2f} and hence trades below par")
 """
 ========================================================
 Exercise 2: Lists- basic operations
