@@ -7,9 +7,13 @@
  　
 
     # Tutorials
-    - [1](https://github.com/MatthewNnaji/ECN241--AssetPricing/blob/main/Tutorials/TU2_241.py): some NPV and compound interest
-    - [2](https://github.com/MatthewNnaji/ECN241--AssetPricing/blob/main/Tutorials/TU2_242.py): annuities and bonds
-　　<img width="533" height="296" alt="Small summary of ECN241 content. About the module:
+    - 1: some NPV and compound interest
+    - 2: annuities and bonds
+　[[1](https://github.com/MatthewNnaji/ECN241--AssetPricing/blob/main/Tutorials/TU2_241.py),[2](https://github.com/MatthewNnaji/ECN241--AssetPricing/blob/main/Tutorials/TU2_242.py),[3](https://github.com/MatthewNnaji/ECN241--AssetPricing/blob/main/Tutorials/TU2_241.py),[4](https://github.com/MatthewNnaji/ECN241--AssetPricing/blob/main/Tutorials/TU2_241.py),[5](https://github.com/MatthewNnaji/ECN241--AssetPricing/blob/main/Tutorials/TU2_241.py),[6](https://github.com/MatthewNnaji/ECN241--AssetPricing/blob/main/Tutorials/TU2_241.py),[7](https://github.com/MatthewNnaji/ECN241--AssetPricing/blob/main/Tutorials/TU2_241.py),[8](https://github.com/MatthewNnaji/ECN241--AssetPricing/blob/main/Tutorials/TU2_241.py),[9](https://github.com/MatthewNnaji/ECN241--AssetPricing/blob/main/Tutorials/TU2_241.py),[10](https://github.com/MatthewNnaji/ECN241--AssetPricing/blob/main/Tutorials/TU2_241.py)]　
+
+
+ 
+  <img width="533" height="296" alt="Small summary of ECN241 content. About the module:
 ECN241 extends the topics from ECN107 Foundations of Finance.
 The aim of this course is twofold:
 ▶ to provide training in the theory of investment and capital markets and introduce you to the
