@@ -19,23 +19,18 @@ def delibird(durate=0,year=time,YTM=IR):
     return(Per)
 
 
-y=delibird()
-z=y.copy()
+z=delibird()
 index=0
 statement= f"Present value of all annualised fixed payments are as follows, from Y1 to Y{time}: ["
 for i in range(len(z)-2):
-    z[i]= round(z[i],1)
-    index=i+1
-    statement+= "£"+str(z[i])+"("+str(index)+"), "
-z[-2]= round(z[-2],1)
-z[-1]= round(z[-1],1)
-statement+=  "£"+str(z[-2])+"("+str(len(z)-1)+") and £"+str(z[-1])+"("+str(len(z))+")]"
+    statement+= "£"+str(f"{z[i]:,.2f}")+"("+str(i+1)+"), "
+statement+=  "£"+str(f"{z[-2]:,.2f}")+"("+str(len(z)-1)+") and £"+str(f"{z[-1]:,.2f}")+"("+str(len(z))+")]"
 print(statement)
 
 nominalstatement= f"Nominal value of all annualised fixed payments are as follows, from Y1 to Y{time}: ["
 for i in range(len(z)-2):
-    nominalstatement+= "£"+str(coupon)+"("+str(index)+"), "
-nominalstatement+=  "£"+str(coupon)+"("+str(len(z)-1)+") and £"+str(par+coupon)+"("+str(len(z))+")]"
+    nominalstatement+= "£"+str(f"{coupon:,.2f}")+"("+str(i+1)+"), "
+nominalstatement+=  "£"+str(f"{coupon:,.2f}")+"("+str(len(z)-1)+") and £"+str(f"{par+coupon:,.2f}")+"("+str(len(z))+")]"
 print(nominalstatement)
 sellyear=int(input("Enter remaining time to maturity"))
 while sellyear < 0 or sellyear > time:
@@ -61,9 +56,7 @@ else:
     profit /= par
     profit = (1+profit)**(1/(time-sellyear))
     profit -= 1
-    roundPV=str(round(sum(x),2))
-    roundProfit=str(round(profit*100,2))
-    print(f"present value is £{roundPV}. If you sold now, your return rate would be {roundProfit}%.")
+    print(f"present value is £{sum(x):,.2f}. If you sold now, your return rate would be {profit:,.2%}.")
 
 
 

@@ -50,7 +50,7 @@ Consider a fixed-coupon bond with the following characteristics:
 • Coupon rate: 6% (annual payments)
 • Maturity: 6 years
 The benchmark spot rate curve is given as:
-spot rates = [0.030, 0.032, 0.035, 0.040, 0.042, 0.045]
+spotrates = [0.030, 0.032, 0.035, 0.040, 0.042, 0.045]
 Assume a constant credit spread of 1 percentage point. Use this to compute risky discount
 rates for pricing the bond.
 1. Compute the price of the bond using the risky spot rate curve.
@@ -61,16 +61,15 @@ other rates unchanged). How did the price change? Why is the change different th
 in the previous point?
 ========================================================
 """
-
-spot rates = [0.030, 0.032, 0.035, 0.040, 0.042, 0.045]
+spotrates = [0.030, 0.032, 0.035, 0.040, 0.042, 0.045]
 creditspread = 0.01
 def bondcalc(face,CR,TTM):
-	CR/=100
+	CR/=10
 	coupon=CR*face
 	bPrice=0
 	for i in range(TTM):
 		r=spotrates[i]+creditspread
 		bPrice+=(coupon/((1+r)*(i+1)))
-	bPrice+=(par/((1+r)*TTM))
+	bPrice+=(face/((1+r)*TTM))
 	return(bPrice)
-print(f"The bond price is ${bondcalc(1000,6,6):.2f}.")
+print(f"The bond price is ${bondcalc(1000,6,6):,.2f}.")

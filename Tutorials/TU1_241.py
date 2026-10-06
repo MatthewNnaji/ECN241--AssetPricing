@@ -9,7 +9,7 @@ def invest(present=1000,interest=7,time=5,compounds=1):
     interest/=100
     future=present*(1+(interest/compounds))**(time*compounds)
     return(future)
-print(f"Future value of the intial investment: #{invest()}")
+print(f"Future value of the intial investment: #{invest():,.2f}")
 """
 Exercise 3: Net Present Value
 A project requires an initial investment of $1,000 and is expected to generate cash inflows
