@@ -16,7 +16,7 @@ def bondpricer(par,TTM,YTM,CR):
     pBond= (coupon/YTM)*(1-(1/(1+YTM)**TTM)) + par*(1/(1+YTM)**TTM)
 	return(pBond)
 
-def bondchecker(realprice,par=1000)
+def bondchecker(realprice,par=1000):
     if realprice > par:
         return(1)
     elif abs (realprice-par) <1e-6: #this is purely due to mechanical technicalities. £5.000000000001 tehcnically isnt equal to £5
