@@ -17,6 +17,6 @@ main concepts in this area.
 We will study:
 the pricing of the main securities in capital markets.
 the most fundamental asset pricing models (CAPM, APT).
-optimal portfolio choice and market efficiency" src="https://github.com/user-attachments/assets/991f53a9-301b-4da7-9242-95823dfa16af" />　　　　　　<img width="225" height="225" alt="PyCharm logo" src="https://github.com/user-attachments/assets/a3b272a2-b6b1-4c88-8ca6-c4ad1eebe9a1" />
+optimal portfolio choice and market efficiency" src="https://github.com/user-attachments/assets/991f53a9-301b-4da7-9242-95823dfa16af" /><img width="225" height="225" alt="PyCharm logo" src="https://github.com/user-attachments/assets/a3b272a2-b6b1-4c88-8ca6-c4ad1eebe9a1" />
 
 
