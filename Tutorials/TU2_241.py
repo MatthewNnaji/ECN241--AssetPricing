@@ -9,25 +9,28 @@ above par” if the price is above par, 2) ”The bond trades at par” if it tr
 3) ”The bond trades below par” if the price is below par. Run this code a few times for
 different values of the market interest rate.
 ========================================================"""
-def bondchecker(par,TTM,YTM,CR):
+def bondpricer(par,TTM,YTM,CR):
     YTM/=100
     CR/=100
     coupon=par*CR
     pBond= (coupon/YTM)*(1-(1/(1+YTM)**TTM)) + par*(1/(1+YTM)**TTM)
-    if pBond > par:
+	return(pBond)
+
+def bondchecker(realprice,par=1000)
+    if realprice > par:
         return(1)
-    elif pBond == par:
+    elif abs (realprice-par) <1e-6: #this is purely due to mechanical technicalities. £5.000000000001 tehcnically isnt equal to £5
         return(2)
-    elif pBond < par:
+    elif realprice < par:
         return(3)
-    
-price = bondchecker(1000,3,4,5)
-if price == 1:
-    print("The bond trades above par")
-if price == 2:
-    print("The bond trades at par")
-if price == 3:
-    print("The bond trades below par")
+price = bondpricer(1000,3,4,5)    
+pricevalue = bondchecker(price)
+if pricevalue == 1:
+    print(f"The bond price is {price:,.2f} and hence trades above par.")
+if pricevalue == 2:
+    print("The bond trades at par and hence it's price is {price:,.2f}.")
+if pricevalue == 3:
+    print("The bond price is {price:,.2f} and hence trades below par")
 """
 ========================================================
 Exercise 2: Lists- basic operations
