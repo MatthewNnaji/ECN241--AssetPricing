@@ -67,7 +67,7 @@ in the previous point?
 spotrates = [0.030, 0.032, 0.035, 0.040, 0.042, 0.045]
 creditspread = 0.01
 def bondcalc(face,CR,TTM):
-	CR/=10
+	CR/=100
 	coupon=CR*face
 	bPrice=0
 	for i in range(TTM):
